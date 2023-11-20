@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            body{
+                background-image:url(zea.jpeg);
+                background-size: 350px;
+                background-position: center;
+            }
+            button{
+                border: 2px;
+                border-radius: 5px;
+                background-color: #dc3545;
+                justify-content: center;
+                display: flex;
+                position: absolute top-50 start-50;
+                margin: 10px 10px;
+                font-size: 25px;
+                font-family: 'Courier New', Courier, monospace;
+                color: white;
+            }
+        </style>
+        <title>Untuk Sayang Aku.Com</title>
+    </head>
+    <body>
+        <script>
+            alert('PERINGATAN!!');
+            alert('Ini aku buat untuk untuk wanita yang sangat aku sayangi...');
+            alert('Aku harap kmu suka yah... ');
+            alert('Sebelumya Ketika Peringatan ini telah selesai.. semisalnya lagu yang udh ku siapkan ini gak kedengaran aku cuman mau bilang kalau tekan tombol "PLAY" terlebih dahulu supaya kamu bisa mendengarkan lagu yang telah aku siapkan ini dan pastinya aku harap kmu makin suka setelah melihat apa  yang aku buat ini untuk kmu...');
+            alert('Kalau semisalnya lagunya sudah kedengaran maka kmu langsung saja klik tombol "klik disini yah"');
+            alert('Sedikit Peringatan.. dann enjoyy!!!');
+        </script>
+        <div class='position-absolute bottom-50 start-50 translate-middle'>
+        <button id="mute">PLAY</button></div>
+        <script>
+            var musik=new Audio();
+            musik.src="y2mate.com - nadhif basalamah  penjaga hati Official Music Video.mp3";
+            musik.loop=true;
+            musik.play();
+            function mulaiAudio(){
+                var play=document.getElementById("play");
+                var play=document.getElementById("mute");
+
+                play.addEventListener('click',fplay);
+                mute.addEventListener('click',fmute);
+
+                function fplay(){
+                    if(musik.paused){
+                        musik.play();
+                    }else{
+                        musik.pause();
+                    }
+                }
+            }
+            window.addEventListener('load',mulaiAudio);
+        </script>
+        <div class='position-absolute top-50 start-50 translate-middle'>
+            <button id='button' class='btn btn-danger btn-lg' onclick='mulai()'> Klik Disini! </button>
+            <div id='iloveyou' style='display: none;'>
+                <h2 class='text-center'>Aku sayang kamu<br>&#10084;&#65039;</h2>
+            </div>
+        </div>
+        <span id='hati' class='fixed-bottom text-center my-3' onclick='hati()'></span>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+        <script type="text/javascript">
+            const author = 'Wira';
+            const swals = Swal.mixin({
+                cancelButtonColor: '#d33',
+                confirmButtonColor: '#d63384',
+            });
+            async function mulai(){
+                await swals.fire('Hai Cayang Aku <3');
+                await swals.fire('Aku sengaja buat ini untuk kmu...');
+                await swals.fire('Karna aku mau mintak maaf ke kmu ayangg...');
+                await swals.fire('Aku gak mau kmu kayak ini terus ke aku.... ');
+                await swals.fire('Maafin aku yah ayang.. Aku tau aku salah ayangg.. Makanya itu aku mau memperbaiki kesalahan yang telah aku perbuat ini ayang :( :(');
+                await swals.fire('Aku janji ke kmu ayang untuk gak buat kamu cemburu lagi.... maapin yah cayang akuu :( :(');
+                await swals.fire('Sumpah yang aku gak kuat banget loh lihat kmu marah2 gini ke aku :( :( aku sampai bingung harus ngelakuin apa lagi biar kmu bisa maapin aku :(  ');
+                await swals.fire('Ayangggg akuuu maapin aku nahhh nangis aku lama2 nih ayang kalau gak kmu maapin :( :(');
+                await swals.fire(':( :( :( :( :(');
+                await swals.fire('Maapin yah ayang akunya.. :( :( ');
+                await swals.fire('Kalau gak dimaafin akunya nangis nih :( :(');
+                await swals.fire('hemmmmm :( ayanggg ayanggg isi yah yang aku suruh ini ayang dengan jujur.. :( :( :(');
+                
+                var { value: nama } = await swals.fire({
+                    title: 'Masukin nama kamu..',
+                    input: 'text',
+                    showCancelButton: true,
+                });
+                if(nama){
+                    var { isConfirmed: sayang } = await swals.fire({
+                        title: `${nama} sayang ga sama ${author}?`,
+                        confirmButtonText: 'Sayang!',
+                        cancelButtonText: 'Enggak!',
+                        showCancelButton: true,
+                    });
+                    if(sayang){
+                        await swals.fire('Aku juga sayang banget sama kamu Cayang... cayangg banget pokonya.. tapinya aku membuat kesalahan yang mengakibatkan kmu marah ama aku.. Sampai aku bingung harus apa :( :(');
+                        var { value: persen } = await swals.fire({
+                            title: 'Seberapa sayang emangnya cayang ke aku ?? :)',
+                            icon: 'question',
+                            input: 'range',
+                            inputLabel: 'Antara 1-100 ya',
+                            inputAttributes: {
+                                min: 1,
+                                max: 100,
+                            },
+                            inputValue: 50
+                        });
+                        if(persen){
+                            await swals.fire(`Makasih ya cayang udah sayang sama ${author} ${persen}%`);
+                            var { isConfirmed: maafin } = await swals.fire({
+                                title: 'Sekarang kamu mau gak maafin aku ayang??',
+                                confirmButtonText: 'Mau!',
+                                cancelButtonText: 'Gak!',
+                                showCancelButton: true,
+                            });
+                            if(maafin){
+                                await swals.fire('Makacih yah ayang kmu udh mau maafin aku :)');
+                                await swals.fire('Kmu memang dah pacar aku yang baik.. tpi akunya malah gitu ke kmu :( :( ');
+                                await swals.fire('Sekali lagi aku mintak maaf yah ke kmu ayang... aku janji enggak akan membuat kmu cemburu lagi ayang :(');
+                                await swals.fire('Yaudh ayang aku cuman bisa ngasih hal kecil ini aja untuk kmu.... aku harap kmu suka yah dan mau memaafkan aku ini yang sudah membuat kesalahan ke kmu yah :) :) :)');
+                                await swals.fire('Aku tunggu respon kmu di tlvn yah ayang.... biar aku ngerasa seperti kamu ada di samping aku kalau lagi nyelesaiin mslh ini :) :)');
+                                await swals.fire('Bay bay cayangg....');
+                                await swals.fire('mwahhhh <3');
+                            } else {
+                                await swals.fire('Yaudh kalau kmu gak mau maafin aku trus aku harus apa ayang?? :(');
+                                await swals.fire('kalau gak gini aja.. kmu mau percaya ke aku gak?? kalau mau kmu pegang janji aku ini ayang yah.. aku berjanji ke ayang untuk enggak akan membuat ayang cemburu lagi.. aku kapok ayangg kalau kamu kayak gini :( :(');
+                                await swals.fire('Gimana cayang?? mau / enggak ayang??');
+                                await swals.fire('Aku tunggu jawaban kmu di tlvn yah...');
+                                await swals.fire('yaudh aku cuman bisa memberikan hal kecil ini ke kmu.. aku harap kmu suka yah ayang.. dan kmu juga mau memaafkan aku yang sudh buat kesalahan ke kmu :( :(');
+                                await swals.fire('Bay bay cayang kuu... aku sayang banget ama kmu pokoknyaa.. kamu jangan pergi dari aku yah :( :(');
+                                await swals.fire('I LOVE YOU CAYANG KU!!');
+                                await swals.fire('Mwahh <3');
+                            }
+                        }
+                    } else {
+                        await swals.fire('Ayang beneran gak sayang ama aku ini ??');
+                        await swals.fire('karena apa ayang gak sayang ama aku?? apakah karna aku udah membuat kmu cemburu ayang :( :(');
+                        await swals.fire('Maaf ayangg.. jangan kayak itu.. aku maunya ayang cayang akuu.. pokoknya harus cayanggg!! gak boleh enggak..');
+                        await swals.fire('Aku takut ayang ngejauh dari aku nah... jangan sampe kayak itu yah... aku udh sayang banget ama kmuu :( :(');
+                        await swals.fire('Cuman aku aja yang salah udh buat kmu cemburu... hadehh ');
+                        await swals.fire('Yaudh deh kalau gak sayang lagi.. ');
+                        await swals.fire('Aku pergi yah cayang..');
+                        await swals.fire('Bay bay cayangnya aku...');
+                        await swals.fire('<3 <3 <3 <3 <3 <3');
+                    }
+                } else {
+                    await swals.fire('Harus diisi nama.. jangan sampe gak diisi..!!!');
+                    await swals.fire('Ayukk diulangi lagi ayang..');
+                }
+            }
+        </script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    </body>
+</html>
